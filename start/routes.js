@@ -25,3 +25,5 @@ Route.post('/authenticate', 'AuthController.authenticate');
 
 //Protegendo Rotas
 Route.get('/app','AppController.index').middleware(['auth']);
+
+//Alteração para ver sincronismo com o git
