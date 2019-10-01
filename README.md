@@ -17,13 +17,12 @@ adonis new yardstick --api-only
 ```
 
 or manually clone the repo and then run `npm install`.
-## Postgres Docker creation
 
-Just in case not having posgres installed, and not wanting to install it, tou can
-run this db on Docker.  If it's your case just run
-docker-compose up -d before initiating tests
+### Postgres Docker creation
 
-### Migrations
+In case of not having postgres db installed it's possible to have it on Docker.  For that just run "docker-compose up -d" and point your connection to this database.
+
+#### Migrations
 
 Run the following command to run startup migrations.
 
