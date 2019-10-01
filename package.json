@@ -16,6 +16,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "set-value": ">=2.0.1",
     "@adonisjs/ace": "^5.0.8",
     "@adonisjs/auth": "^3.0.7",
     "@adonisjs/bodyparser": "^2.0.5",
@@ -26,8 +27,10 @@
     "@adonisjs/lucid": "^6.1.3",
     "pg": "^7.12.1"
   },
+  
   "devDependencies": {},
   "autoload": {
+    "set-value": ">=2.0.1",
     "App": "./app"
   }
 }

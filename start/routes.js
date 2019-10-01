@@ -25,5 +25,8 @@ Route.post('/authenticate', 'AuthController.authenticate');
 
 //Protegendo Rotas
 Route.get('/app','AppController.index').middleware(['auth']);
-
-//Alteração sincronismo com o git
+Route.group(() => {
+  Route.resource('tweets', 'TweetController')
+  .apiOnly()
+  .except('update');
+}).middleware(['auth']);
